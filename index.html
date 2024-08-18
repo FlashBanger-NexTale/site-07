@@ -6,53 +6,54 @@
     <title>SCP:SL Community Hub</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Trebuchet MS', sans-serif;
             background: url('https://raw.githubusercontent.com/your-username/your-repository/main/images/background.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #f1f1f1;
             margin: 0;
             padding: 0;
         }
-        header {
+        header { 
             padding: 20px;
             background-color: rgba(45, 45, 45, 0.8);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            text-align: left; /* Align header text to the left */
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
         .container {
-            margin: 50px auto;
-            max-width: 800px;
-            background-color: rgba(0, 0, 0, 0.5);
+            margin: 50px 0;
             padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
-            text-align: left; /* Align buttons to the left */
+            text-align: left; /* Align content to the left */
+            max-width: 300px; /* Limit the container width */
         }
         .button {
-            display: block; /* Make buttons take full width */
+            display: block;
             background-color: #3a3a3a;
             color: #f1f1f1;
             padding: 15px 25px;
-            margin: 10px 0; /* Vertical margin between buttons */
+            margin: 10px 0;
             text-decoration: none;
             border-radius: 5px;
             font-size: 1.2em;
-            transition: background-color 0.3s ease, padding-left 0.3s ease; /* Transition for padding */
+            transition: background-color 0.3s ease, padding-left 0.3s ease;
+            text-align: left; /* Align text inside the button to the left */
         }
         .button:hover {
             background-color: #575757;
             padding-left: 35px; /* Add space for ">" */
         }
         .button:hover::before {
-            content: "> "; /* Add ">" symbol on hover */
+            content: "⊳ "; /* Add ">" symbol on hover */
         }
         footer {
             padding: 10px;
             background-color: rgba(45, 45, 45, 0.8);
-            text-align: center;
+            text-align: left; /* Align footer text to the left */
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -69,10 +70,10 @@
     </header>
 
     <div class="container">
-        <a href="rules.html" class="button">Rules</a>
-        <a href="announcements.html" class="button">Announcements</a>
-        <a href="fun.html" class="button">Fun Stuff</a>
-        <a href="server-info.html" class="button">Server Info</a>
+        <a href="rules.html" class="button">Правила Сервера</a>
+        <a href="announcements.html" class="button">Объявления</a>
+        <a href="fun.html" class="button">Важ. Инфо</a>
+        <a href="server-info.html" class="button">Персонал Учреждения</a>
         <a href="contact.html" class="button">Contact/Support</a>
     </div>
 
@@ -80,4 +81,4 @@
         <p>&copy; 2024 SCP:SL Community. All rights reserved.</p>
     </footer>
 </body>
-</html>
+</html
