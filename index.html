@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Trebuchet MS', sans-serif;
-            background: url('https://drive.google.com/file/d/1sBEwufXzhYz7-2k_Li--Z7_UT8ZAT8OO/view?usp=drive_link') no-repeat center center fixed;
+            background: url('https://drive.google.com/uc?export=view&id=1sBEwufXzhYz7-2k_Li--Z7_UT8ZAT8OO') no-repeat center center fixed;
             background-size: cover;
             color: #f1f1f1;
             margin: 0;
@@ -17,7 +17,7 @@
             padding: 20px;
             background-color: rgba(45, 45, 45, 0.8);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            text-align: left; /* Align header text to the left */
+            text-align: left;
         }
         header h1 {
             margin: 0;
@@ -28,8 +28,8 @@
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
-            text-align: left; /* Align content to the left */
-            max-width: 300px; /* Limit the container width */
+            text-align: left;
+            max-width: 300px;
         }
         .button {
             display: block;
@@ -41,19 +41,19 @@
             border-radius: 5px;
             font-size: 1.2em;
             transition: background-color 0.3s ease, padding-left 0.3s ease;
-            text-align: left; /* Align text inside the button to the left */
+            text-align: left;
         }
         .button:hover {
             background-color: #575757;
-            padding-left: 35px; /* Add space for ">" */
+            padding-left: 35px;
         }
         .button:hover::before {
-            content: "⊳ "; /* Add ">" symbol on hover */
+            content: "⊳ ";
         }
         footer {
             padding: 10px;
             background-color: rgba(45, 45, 45, 0.8);
-            text-align: left; /* Align footer text to the left */
+            text-align: left;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -61,6 +61,11 @@
         footer p {
             margin: 0;
             font-size: 0.9em;
+        }
+        .audio-embed {
+            position: absolute;
+            top: -9999px; /* Hide the audio player off-screen */
+            left: -9999px;
         }
     </style>
 </head>
@@ -80,5 +85,9 @@
     <footer>
         <p>&copy; 2024 SCP:SL Community. All rights reserved.</p>
     </footer>
+
+    <!-- YouTube Audio Embed -->
+    <iframe class="audio-embed" src="https://youtu.be/lpAK3fosNIE?si=PTovCY_EF5luzzkA?autoplay=1&loop=1&playlist=YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 </body>
-</html
+</html>
