@@ -71,9 +71,10 @@
             this.value = "D-r. Samuel Windent";
         });
 
-        // Fake login function to prevent real submission
+        // Fake login function to redirect to another page
         function fakeLogin() {
-            alert("Access Denied: Invalid credentials.");
+            alert("Login successful! Redirecting...");
+            window.location.href = "dashboard.html"; // Redirects to the specified page
         }
     </script>
 
