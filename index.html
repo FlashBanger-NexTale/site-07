@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake Login</title>
+    <title>Log-in</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            background: url('https://wallpaper.dog/large/17022180.png') no-repeat center center fixed; /* Update this with your PNG file path */
+            background-size: cover; /* Cover the entire viewport */
             color: white;
             display: flex;
             justify-content: center;
@@ -17,12 +18,15 @@
         }
 
         .login-container {
-            background-color: #444;
+            background-color: rgba(68, 68, 68, 0.8); /* Slightly transparent background for better readability */
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             width: 300px;
             text-align: center;
+            margin-right: 750px; /* Optional: Add margin to
+            marginpush it away from the left edge */
+            margin-bottom: -150px;
         }
 
         .login-container h2 {
@@ -31,13 +35,14 @@
 
         .login-container input[type="text"], 
         .login-container input[type="password"] {
-            width: 100%;
+            width: 60%; /* Make inputs take full width of the container */
             padding: 10px;
-            margin: 10px 0;
+            margin: 4px 0;
             border-radius: 5px;
             border: none;
             background-color: #555;
             color: white;
+            
         }
 
         .login-container button {
@@ -60,23 +65,24 @@
 
     <div class="login-container">
         <h2>Login</h2>
-        <input type="text" id="loginName" placeholder="Login Name">
+        <input type="text" id="loginName" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
-        <button onclick="fakeLogin()">Login</button>
+        <button onclick="fakeLogin()">Log-In</button>
     </div>
 
     <script>
-        // Automatically replace the login name with "D-r. Samuel Windent"
+        // Automatically replace the login name with "Samuel Brendon"
         document.getElementById('loginName').addEventListener('input', function() {
-            this.value = "D-r. Samuel Windent";
+            this.value = "Samuel Brendon";
         });
 
         // Fake login function to redirect to another page
         function fakeLogin() {
-            alert("Login successful! Redirecting...");
+            alert("Всё успешно! ...");
             window.location.href = "rules.html"; // Redirects to the specified page
         }
     </script>
 
 </body>
-</html
+</html>
+
