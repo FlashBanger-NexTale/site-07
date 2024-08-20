@@ -1,172 +1,98 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCP Foundation Russian Branch</title>
+    <title>SCP.RU</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
-        }
-
-        /* Header */
-        header {
-            background-color: #333;
-            padding: 20px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.5em;
-            letter-spacing: 0.1em;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 0.9em;
-        }
-
-        /* Container */
-        .container {
-            display: flex;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            width: 250px;
-            background-color: #e8e8e8;
-            padding: 15px;
-            margin-right: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .sidebar h3 {
-            font-size: 1.1em;
-            border-bottom: 2px solid #c22;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-        }
-
-        .sidebar a {
-            display: block;
             color: #333;
+        }
+        header {
+            background-color: #232323;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
             text-decoration: none;
-            margin: 10px 0;
-            padding: 5px;
+            margin: 0 15px;
         }
-
-        .sidebar a:hover {
-            color: #c22;
-            text-decoration: underline;
-        }
-
-        /* Main Content */
-        .content {
-            flex: 1;
-            background-color: white;
+        .container {
             padding: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
-
-        .content h2 {
-            color: #c22;
-            font-size: 1.5em;
+        .scp-item {
+            background-color: white;
             margin-bottom: 20px;
-        }
-
-        .content p {
-            line-height: 1.6;
-        }
-
-        .content img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-            border: 1px solid #ccc;
-        }
-
-        .info-box {
-            border: 1px solid #ccc;
             padding: 15px;
-            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        /* Footer */
-        footer {
-            background-color: #333;
+        .scp-item h2 {
+            margin-top: 0;
+        }
+        .footer {
+            background-color: #232323;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
+            padding: 10px;
+            position: fixed;
             width: 100%;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        footer a {
-            color: #ccc;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: white;
-            text-decoration: underline;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>SCP Foundation Russian Branch</h1>
-        <nav>
-            <a href="#">Обновления</a>
-            <a href="#">Правила сайта</a>
-            <a href="#">Автору</a>
-            <a href="#">Переводчику</a>
-        </nav>
-    </header>
+<header>
+    <h1>SCP.RU</h1>
+    <p>Secure. Contain. Protect.</p>
+</header>
 
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h3>Об Организации</h3>
-            <a href="#">Объекты RU</a>
-            <a href="#">Рассказы</a>
-            <a href="#">Канон-хаб</a>
-            <a href="#">Списки аномалий</a>
-            <a href="#">Полигон</a>
-        </aside>
+<nav>
+    <a href="#scp-series">SCP Series</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <!-- Main Content -->
-        <main class="content">
-            <h2>Досье учреждения: Зона 7</h2>
-            <div class="info-box">
-                <p><strong>Официальное обозначение:</strong> Кузнецкое учреждение исследований и содержания</p>
-                <p><strong>Дата основания:</strong> Ноябрь 1991 года</p>
-                <p><strong>Директор-учредитель:</strong> Ошоков Павел Вячеславович</p>
-            </div>
-            <img src="your-image-url" alt="Зона 7">
-            <p>Назначение: Массовое содержание, административные функции, исследовательская деятельность, размещение опергрупп.</p>
-        </main>
-    </div>
+<div class="container">
+    <section id="scp-series">
+        <div class="scp-item">
+            <h2>SCP-001: [DATA EXPUNGED]</h2>
+            <p>Description: [REDACTED]</p>
+        </div>
 
-    <footer>
-        <p>Содержимое этого сайта распространяется под лицензией <a href="#">Creative Commons Attribution-ShareAlike 3.0 License.</a></p>
-    </footer>
+        <div class="scp-item">
+            <h2>SCP-173: The Sculpture</h2>
+            <p>Description: SCP-173 is a concrete statue that is animate and extremely hostile...</p>
+        </div>
+
+        <!-- Add more SCP items as needed -->
+    </section>
+
+    <section id="about">
+        <h2>About SCP.RU</h2>
+        <p>SCP.RU is a fictional organization responsible for locating and containing individuals, entities, locations, and objects that violate natural law...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@scp.ru</p>
+    </section>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 SCP.RU. All rights reserved.</p>
+</div>
 
 </body>
 </html>
