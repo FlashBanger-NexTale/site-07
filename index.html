@@ -1,128 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Atlas - Hard RP Server</title>
+    <title>SCP Foundation Russian Branch</title>
     <style>
         body {
-            font-family: 'Trebuchet MS', sans-serif;
-            background: url('your-background-image-url') no-repeat center center fixed;
-            background-size: cover;
-            color: #d1d1d1;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            overflow: hidden;
         }
 
+        /* Header */
         header {
-            text-align: center;
-            margin-top: 50px;
-            color: #d1d1d1;
-            font-size: 2em;
-            font-weight: bold;
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
             margin: 0;
-            letter-spacing: 0.15em;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
         }
 
-        header h2 {
-            margin: 10px 0;
-            font-size: 1.2em;
-            font-weight: normal;
-            letter-spacing: 0.2em;
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9em;
         }
 
+        /* Container */
         .container {
-            position: absolute;
-            top: 150px;
-            left: 50px;
+            display: flex;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border: 1px solid #888;
-            width: 400px;
-            height: calc(100vh - 200px); /* Adjust height */
-            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .container h3 {
-            margin-bottom: 10px;
-            border-bottom: 1px solid #888;
-            padding-bottom: 5px;
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #e8e8e8;
+            padding: 15px;
+            margin-right: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
             font-size: 1.1em;
+            border-bottom: 2px solid #c22;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
         }
 
-        .container a {
+        .sidebar a {
             display: block;
-            color: #d1d1d1;
+            color: #333;
             text-decoration: none;
             margin: 10px 0;
             padding: 5px;
-            font-size: 1.1em;
         }
 
-        .container a:hover {
+        .sidebar a:hover {
+            color: #c22;
             text-decoration: underline;
-            padding-left: 10px;
-            transition: 0.3s;
         }
 
+        /* Main Content */
+        .content {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #c22;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
+
+        .info-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
         footer {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            text-align: right;
-            color: #888;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
         }
 
         footer a {
-            color: #888;
+            color: #ccc;
             text-decoration: none;
         }
 
         footer a:hover {
+            color: white;
             text-decoration: underline;
-        }
-
-        .footer-line {
-            position: fixed;
-            bottom: 10px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 0.8em;
-            color: #888;
-            letter-spacing: 0.1em;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>{PROJECT ATLAS}</h1>
-        <h2>HARD - ROLEPLAY - SERVER</h2>
+        <h1>SCP Foundation Russian Branch</h1>
+        <nav>
+            <a href="#">Обновления</a>
+            <a href="#">Правила сайта</a>
+            <a href="#">Автору</a>
+            <a href="#">Переводчику</a>
+        </nav>
     </header>
 
     <div class="container">
-        <h3>▻ Правила - сервера</h3>
-        <a href="#">▻ Протоколы | Коды</a>
-        <a href="#">▻ Важ. Информация</a>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Об Организации</h3>
+            <a href="#">Объекты RU</a>
+            <a href="#">Рассказы</a>
+            <a href="#">Канон-хаб</a>
+            <a href="#">Списки аномалий</a>
+            <a href="#">Полигон</a>
+        </aside>
 
-        <h3>▻ Персонал - учреждения</h3>
-        <a href="#">▻ Поддержки извне</a>
-        <a href="#">▻ Оппозиции извне</a>
-        <a href="#">▻ Аномалии - учреждения</a>
+        <!-- Main Content -->
+        <main class="content">
+            <h2>Досье учреждения: Зона 7</h2>
+            <div class="info-box">
+                <p><strong>Официальное обозначение:</strong> Кузнецкое учреждение исследований и содержания</p>
+                <p><strong>Дата основания:</strong> Ноябрь 1991 года</p>
+                <p><strong>Директор-учредитель:</strong> Ошоков Павел Вячеславович</p>
+            </div>
+            <img src="your-image-url" alt="Зона 7">
+            <p>Назначение: Массовое содержание, административные функции, исследовательская деятельность, размещение опергрупп.</p>
+        </main>
     </div>
 
     <footer>
         <p>Содержимое этого сайта распространяется под лицензией <a href="#">Creative Commons Attribution-ShareAlike 3.0 License.</a></p>
     </footer>
-
-    <div class="footer-line">
-        SCP FOUNDATION & ATLAS INDUSTRIAL
-    </div>
 
 </body>
 </html>
