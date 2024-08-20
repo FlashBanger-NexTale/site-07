@@ -3,82 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCP:SL Community Hub</title>
+    <title>SCP- Secure, Contain, Protect</title>
     <style>
         body {
-            font-family: 'Trebuchet MS', sans-serif;
-            background: url('https://drive.google.com/uc?export=view&id=1sBEwufXzhYz7-2k_Li--Z7_UT8ZAT8OO') no-repeat center center fixed;
-            background-size: cover;
-            color: #f1f1f1;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1e1e1e;
+            color: #d0d0d0;
             margin: 0;
             padding: 0;
         }
-        header { 
+        header {
+            background-color: #2a2a2a;
             padding: 20px;
-            background-color: rgba(45, 45, 45, 0.8);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            text-align: left;
+            text-align: center;
+            border-bottom: 2px solid #444;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            color: #ffffff;
         }
-        .container {
-            margin: 50px 0;
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: #a0a0a0;
+        }
+        #container {
+            display: flex;
+        }
+        nav {
+            background-color: #2a2a2a;
+            width: 250px;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 7px;
-            text-align: left;
-            max-width: 500px;
+            box-sizing: border-box;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+            border-right: 2px solid #444;
         }
-        .button {
-            display: block;
-            background-color: #3a3a3a;
-            color: #f1f1f1;
-            padding: 15px 25px;
-            margin: 10px 0;
+        nav a {
+            color: #d0d0d0;
             text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+        nav a:hover {
+            color: #fff;
+            background-color: #444;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+        .scp-item {
+            background-color: #2a2a2a;
+            margin-bottom: 20px;
+            padding: 15px;
             border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease, padding-left 0.3s ease;
-            text-align: left;
+            border: 1px solid #444;
         }
-        .button:hover {
-            background-color: #575757;
-            padding-left: 35px;
+        .scp-item h2 {
+            margin-top: 0;
+            color: #ffffff;
         }
-        .button:hover::before {
-            content: "⊳ ";
+        .scp-item p {
+            color: #a0a0a0;
         }
         footer {
+            background-color: #2a2a2a;
+            color: #d0d0d0;
+            text-align: center;
             padding: 10px;
-            background-color: rgba(45, 45, 45, 0.8);
-            text-align: left;
             position: fixed;
             bottom: 0;
             width: 100%;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
+            border-top: 2px solid #444;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Atlas Hard-RP</h1>
-    </header>
 
-    <div class="container">
-        <a href="rules.html" class="button">Правила Сервера</a>
-        <a href="announcements.html" class="button">Объявления</a>
-        <a href="fun.html" class="button">Важ. Инфо</a>
-        <a href="server-info.html" class="button">Персонал Учреждения</a>
-        <a href="contact.html" class="button">Contact/Support</a>
+<header>
+    <h1>S C P</h1>
+    <p>Secure, Contain, Protect</p>
+</header>
+
+<div id="container">
+    <nav>
+        <a href="#scp-series">SCP-Объекты</a>
+        <a href="#about">О-нас</a>
+        <a href="#contact">Поддержка</a>
+    </nav>
+
+    <div class="content">
+        <section id="scp-series">
+            <div class="scp-item">
+                <h2>SCP-088-S7: [DATA EXPUNGED]</h2>
+                <p><strong>Object Class:</strong> Keter</p>
+                <p><strong>Description:</strong> [REDACTED]</p>
+            </div>
+
+            <div class="scp-item">
+                <h2>SCP-002-S7: Д-р. Самюэль</h2>
+                <p><strong>Object Class:</strong> Euclid</p>
+                <p><strong>Description:</strong> [OPEN TO SEE]</p>
+            </div>
+
+            <!-- Additional SCP items go here -->
+        </section>
+
+        <section id="about">
+            <h2>Ф о н д | S C P</h2>
+            <p>SCP это организация преданая своиму слогану. [ Обезопасить, Удержать, и Сохранить ] аномальные объекты, существа, или феномены...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты | IT</h2>
+            <p>SiCPnet : sitesevenit@sicpnet.s7</p>
+        </section>
     </div>
+</div>
 
-    <footer>
-        <p>&copy; 2024 SCP:SL Community. All rights reserved.</p>
-    </footer>
+<footer>
+    &copy; 2024 SCP.RU. All Rights Reserved.
+</footer>
+
 </body>
 </html>
+
