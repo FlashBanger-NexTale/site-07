@@ -1,11 +1,11 @@
-// script.js
 window.addEventListener('load', function() {
     const loadingScreen = document.getElementById('loading-screen');
-    const content = document.getElementById('content');
 
-    // Hide loading screen
-    loadingScreen.style.display = 'none';
+    // Hide loading screen after 3 seconds
+    setTimeout(function() {
+        loadingScreen.style.display = 'none';
 
-    // Show content
-    content.style.display = 'block';
+        // Redirect to another page
+        window.location.href = 'https://www.example.com'; // Replace with the URL you want to redirect to
+    }, 3000); // 3000ms = 3 seconds
 });
