@@ -6,6 +6,6 @@ window.addEventListener('load', function() {
         loadingScreen.style.display = 'none';
 
         // Redirect to another page
-        window.location.href = 'https://www.example.com'; // Replace with the URL you want to redirect to
-    }, 3000); // 3000ms = 3 seconds
+        window.location.href = 'https://flashbanger-nextale.github.io/site-07/rules.html'; // Replace with the URL you want to redirect to
+    }, 5000); // 3000ms = 3 seconds
 });
